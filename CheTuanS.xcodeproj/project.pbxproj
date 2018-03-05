@@ -28,6 +28,7 @@
 		851EB553204B8AEF00556F51 /* JTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB551204B8AEE00556F51 /* JTNetworkManager.m */; };
 		851EB557204B8CB800556F51 /* JTBaseMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB555204B8CB800556F51 /* JTBaseMethod.m */; };
 		851EB55D204B901200556F51 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB55C204B901200556F51 /* TTViewController.m */; };
+		851EB560204CDDA000556F51 /* SimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB55F204CDDA000556F51 /* SimpleRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		851EB558204B8D8700556F51 /* AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacros.h; sourceTree = "<group>"; };
 		851EB55B204B901200556F51 /* TTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
 		851EB55C204B901200556F51 /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
+		851EB55E204CDDA000556F51 /* SimpleRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleRequest.h; sourceTree = "<group>"; };
+		851EB55F204CDDA000556F51 /* SimpleRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleRequest.m; sourceTree = "<group>"; };
 		E365651AC251634E073EC01F /* Pods-CheTuanS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheTuanS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheTuanS/Pods-CheTuanS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +230,8 @@
 				851EB547204B891100556F51 /* CTPCacheFileManager.h */,
 				851EB548204B891100556F51 /* CTPCacheFileManager.m */,
 				851EB54A204B89BE00556F51 /* PrefixHeader.pch */,
+				851EB55E204CDDA000556F51 /* SimpleRequest.h */,
+				851EB55F204CDDA000556F51 /* SimpleRequest.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				851EB5112049496F00556F51 /* main.m in Sources */,
 				851EB557204B8CB800556F51 /* JTBaseMethod.m in Sources */,
 				851EB550204B8A9200556F51 /* MBProgressHUD+JT.m in Sources */,
+				851EB560204CDDA000556F51 /* SimpleRequest.m in Sources */,
 				851EB553204B8AEF00556F51 /* JTNetworkManager.m in Sources */,
 				851EB546204B88E800556F51 /* NSData+Encryption.m in Sources */,
 				851EB5032049496F00556F51 /* AppDelegate.m in Sources */,

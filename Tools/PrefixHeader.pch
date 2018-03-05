@@ -14,6 +14,7 @@
 #import "Header.h"
 #import "JTBaseMethod.h"
 #import "AppMacros.h"
+#import "JTNetworkManager.h"
 //#import MBProgressHUD.h
 
 // Include any system framework and library headers here that should be included in all compilation units.

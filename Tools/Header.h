@@ -51,7 +51,7 @@
 #define CTPRGBColorR(r,g,b,R) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:R]
 
 //0为真实环境  1为测试环境
-#define IS_TEST     0
+#define IS_TEST     1
 
 //开心车还是阳光车市   0为开心车 1为阳光车市
 #define IS_HAPPY_OR_SUNNY   1

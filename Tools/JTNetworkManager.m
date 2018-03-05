@@ -21,7 +21,7 @@ NSString * const kServerResponseSuccess = @"0000";
 NSString * const kServerResponseFailure = @"1111";
 NSString * const kErrorURL = @"http://115.159.90.216/err";
 //NSString * const kBaseURL = @"http://192.168.1.80:8081/suncars/app/";
-NSString * const kBaseURL = @"http://192.168.1.174:8080/suncars/app/";
+NSString * const kBaseURL = @"http://data.chetuan.com.cn/direct_sale/app_huangniu/";
 #else
 NSString * const kServerCodeSuccess = @"0000";
 NSString * const kServerCodeFailure = @"1111";
@@ -30,12 +30,13 @@ NSString * const kServerRequestFailed = @"网络请求失败，请稍后重试�
 NSString * const kServerResponseSuccess = @"0000";
 NSString * const kServerResponseFailure = @"1111";
 NSString * const kErrorURL = @"https://115.159.90.216/err";
+NSString * const kBaseURL = @"https://www.suncars.com.cn/suncars/app/";
 
-    #if IS_HAPPY_OR_SUNNY
-        NSString * const kBaseURL = @"https://www.suncars.com.cn/suncars/app/";
-    #else
-        NSString * const kBaseURL = @"https://www.kaixinche.com/suncars/app/";
-    #endif
+//    #if IS_HAPPY_OR_SUNNY
+//        NSString * const kBaseURL = @"https://www.suncars.com.cn/suncars/app/";
+//    #else
+//        NSString * const kBaseURL = @"https://www.kaixinche.com/suncars/app/";
+//    #endif
 
 #endif
 
@@ -151,7 +152,8 @@ NSString * const kErrorURL = @"https://115.159.90.216/err";
     }
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+
     if (IS_TEST) {
         AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
         //是否在证书域字段中验证域名

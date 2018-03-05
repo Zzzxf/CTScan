@@ -14,10 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-
-
-
-
 @property (nonatomic, strong) NSMutableArray<NSArray<NSString *> *> *actionList;
 
 @end
@@ -37,7 +33,15 @@
     //    #error 【必须！】请在 ai.baidu.com中新建App, 绑定BundleId后，在此填写授权信息
     //    #error 【必须！】上传至AppStore前，请使用lipo移除AipBase.framework、AipOcrSdk.framework的模拟器架构，参考FAQ：ai.baidu.com/docs#/OCR-iOS-SDK/top
     //     授权方法1：在此处填写App的Api Key/Secret Key
-    [[AipOcrService shardService] authWithAK:@"Api Key" andSK:@"Secret Key"];
+    [[AipOcrService shardService] authWithAK:@"YnGoBXWPQwoFzfHpBDGi24ad" andSK:@"eWKazwAlv6FMG4Avbxp6Uoy9LIyrAcvr"];
+
+    UIButton *pushBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [pushBtn addTarget:self action:@selector(pushInfo) forControlEvents:UIControlEventTouchUpInside];
+    [pushBtn setTitle:@"Push" forState:UIControlStateNormal];
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc]initWithCustomView:pushBtn];
+    self.navigationItem.rightBarButtonItem = rightBarItem;
+
+
 
 
     // 授权方法2（更安全）： 下载授权文件，添加至资源
@@ -59,6 +63,40 @@
     [self updateTableView];
 }
 
+-(void)pushInfo{
+    NSLog(@"pushInfo");
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:@"LSVGP4556D2045473" forKey:@"vin"];
+
+    [[JTNetworkManager sharedManager]requestServerAPI:@"ajax/panku" params:dict showHud:NO completionHandler:^(id task, id responseObject, NSError *error) {
+
+    }];
+
+    return;
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+
+    //NSDictionary *dict = [NSDictionary dictionaryWithObject:@"LSVGP4556D2045473" forKey:@"vin"];
+    [manager GET:@"http://data.chetuan.com.cn/direct_sale/app_huangniu/ajax/panku" parameters:dict progress:^(NSProgress * _Nonnull downloadProgress) {
+
+    }
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+
+             NSLog(@"这里打印请求成功要做的事");
+             NSLog(@"%@",responseObject);
+         }
+
+         failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull   error) {
+
+             NSLog(@"%@",error);  //这里打印错误信息
+
+         }];
+
+//    作者：WangK_Dev
+//    链接：https://www.jianshu.com/p/11bb0d4dc649
+//    來源：简书
+//    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+}
+
 - (void)configureView {
 
     self.title = @"百度OCR";
@@ -74,16 +112,16 @@
     [self.actionList addObject:@[@"通用文字识别(高精度含位置版)", @"generalAccurateOCR"]];
     [self.actionList addObject:@[@"通用文字识别(含生僻字版)", @"generalEnchancedOCR"]];
     [self.actionList addObject:@[@"网络图片文字识别", @"webImageOCR"]];
-    [self.actionList addObject:@[@"身份证正面拍照识别", @"idcardOCROnlineFront"]];
-    [self.actionList addObject:@[@"身份证反面拍照识别", @"idcardOCROnlineBack"]];
-    [self.actionList addObject:@[@"身份证正面(嵌入式质量控制+云端识别)", @"localIdcardOCROnlineFront"]];
-    [self.actionList addObject:@[@"身份证反面(嵌入式质量控制+云端识别)", @"localIdcardOCROnlineBack"]];
-    [self.actionList addObject:@[@"银行卡正面拍照识别", @"bankCardOCROnline"]];
-    [self.actionList addObject:@[@"驾驶证识别", @"drivingLicenseOCR"]];
-    [self.actionList addObject:@[@"行驶证识别", @"vehicleLicenseOCR"]];
-    [self.actionList addObject:@[@"车牌识别", @"plateLicenseOCR"]];
-    [self.actionList addObject:@[@"营业执照识别", @"businessLicenseOCR"]];
-    [self.actionList addObject:@[@"票据识别", @"receiptOCR"]];
+//    [self.actionList addObject:@[@"身份证正面拍照识别", @"idcardOCROnlineFront"]];
+//    [self.actionList addObject:@[@"身份证反面拍照识别", @"idcardOCROnlineBack"]];
+//    [self.actionList addObject:@[@"身份证正面(嵌入式质量控制+云端识别)", @"localIdcardOCROnlineFront"]];
+//    [self.actionList addObject:@[@"身份证反面(嵌入式质量控制+云端识别)", @"localIdcardOCROnlineBack"]];
+//    [self.actionList addObject:@[@"银行卡正面拍照识别", @"bankCardOCROnline"]];
+//    [self.actionList addObject:@[@"驾驶证识别", @"drivingLicenseOCR"]];
+//    [self.actionList addObject:@[@"行驶证识别", @"vehicleLicenseOCR"]];
+//    [self.actionList addObject:@[@"车牌识别", @"plateLicenseOCR"]];
+//    [self.actionList addObject:@[@"营业执照识别", @"businessLicenseOCR"]];
+//    [self.actionList addObject:@[@"票据识别", @"receiptOCR"]];
 }
 
 - (void)configCallback {
