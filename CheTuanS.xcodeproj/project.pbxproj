@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59C4BBBB2A7CE0321EE4A823 /* libPods-CheTuanS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60617CEFF336EE3DE01E7488 /* libPods-CheTuanS.a */; };
+		851EB5032049496F00556F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB5022049496F00556F51 /* AppDelegate.m */; };
+		851EB5092049496F00556F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851EB5072049496F00556F51 /* Main.storyboard */; };
+		851EB50B2049496F00556F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851EB50A2049496F00556F51 /* Assets.xcassets */; };
+		851EB50E2049496F00556F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851EB50C2049496F00556F51 /* LaunchScreen.storyboard */; };
+		851EB5112049496F00556F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB5102049496F00556F51 /* main.m */; };
+		851EB51B2049497000556F51 /* CheTuanSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB51A2049497000556F51 /* CheTuanSTests.m */; };
+		851EB5262049497000556F51 /* CheTuanSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB5252049497000556F51 /* CheTuanSUITests.m */; };
+		851EB537204949C300556F51 /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EB534204949C200556F51 /* IdcardQuality.framework */; };
+		851EB53A204949D800556F51 /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 851EB534204949C200556F51 /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		851EB53C204949DA00556F51 /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EB535204949C300556F51 /* AipOcrSdk.framework */; };
+		851EB53D204949DA00556F51 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 851EB535204949C300556F51 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		851EB53E204949F300556F51 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EB533204949C200556F51 /* AipBase.framework */; };
+		851EB53F204949F300556F51 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 851EB533204949C200556F51 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		851EB546204B88E800556F51 /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB545204B88E800556F51 /* NSData+Encryption.m */; };
+		851EB549204B891100556F51 /* CTPCacheFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB548204B891100556F51 /* CTPCacheFileManager.m */; };
+		851EB54F204B8A9200556F51 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB54B204B8A9200556F51 /* NSString+MD5.m */; };
+		851EB550204B8A9200556F51 /* MBProgressHUD+JT.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB54D204B8A9200556F51 /* MBProgressHUD+JT.m */; };
+		851EB553204B8AEF00556F51 /* JTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB551204B8AEE00556F51 /* JTNetworkManager.m */; };
+		851EB557204B8CB800556F51 /* JTBaseMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB555204B8CB800556F51 /* JTBaseMethod.m */; };
+		851EB55D204B901200556F51 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB55C204B901200556F51 /* TTViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		851EB5172049497000556F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851EB4F62049496F00556F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851EB4FD2049496F00556F51;
+			remoteInfo = CheTuanS;
+		};
+		851EB5222049497000556F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851EB4F62049496F00556F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851EB4FD2049496F00556F51;
+			remoteInfo = CheTuanS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		851EB53B204949D800556F51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				851EB53F204949F300556F51 /* AipBase.framework in Embed Frameworks */,
+				851EB53A204949D800556F51 /* IdcardQuality.framework in Embed Frameworks */,
+				851EB53D204949DA00556F51 /* AipOcrSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05B228F94E83FC5B63719D3F /* Pods-CheTuanS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheTuanS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheTuanS/Pods-CheTuanS.release.xcconfig"; sourceTree = "<group>"; };
+		60617CEFF336EE3DE01E7488 /* libPods-CheTuanS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheTuanS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		851EB4FE2049496F00556F51 /* CheTuanS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheTuanS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851EB5012049496F00556F51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		851EB5022049496F00556F51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		851EB5082049496F00556F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		851EB50A2049496F00556F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		851EB50D2049496F00556F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		851EB50F2049496F00556F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851EB5102049496F00556F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		851EB5162049497000556F51 /* CheTuanSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheTuanSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		851EB51A2049497000556F51 /* CheTuanSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheTuanSTests.m; sourceTree = "<group>"; };
+		851EB51C2049497000556F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851EB5212049497000556F51 /* CheTuanSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheTuanSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		851EB5252049497000556F51 /* CheTuanSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheTuanSUITests.m; sourceTree = "<group>"; };
+		851EB5272049497000556F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851EB533204949C200556F51 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		851EB534204949C200556F51 /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
+		851EB535204949C300556F51 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
+		851EB544204B88E800556F51 /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		851EB545204B88E800556F51 /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
+		851EB547204B891100556F51 /* CTPCacheFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPCacheFileManager.h; sourceTree = "<group>"; };
+		851EB548204B891100556F51 /* CTPCacheFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPCacheFileManager.m; sourceTree = "<group>"; };
+		851EB54A204B89BE00556F51 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		851EB54B204B8A9200556F51 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		851EB54C204B8A9200556F51 /* MBProgressHUD+JT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JT.h"; sourceTree = "<group>"; };
+		851EB54D204B8A9200556F51 /* MBProgressHUD+JT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JT.m"; sourceTree = "<group>"; };
+		851EB54E204B8A9200556F51 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		851EB551204B8AEE00556F51 /* JTNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTNetworkManager.m; sourceTree = "<group>"; };
+		851EB552204B8AEE00556F51 /* JTNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTNetworkManager.h; sourceTree = "<group>"; };
+		851EB554204B8BBA00556F51 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		851EB555204B8CB800556F51 /* JTBaseMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTBaseMethod.m; sourceTree = "<group>"; };
+		851EB556204B8CB800556F51 /* JTBaseMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTBaseMethod.h; sourceTree = "<group>"; };
+		851EB558204B8D8700556F51 /* AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacros.h; sourceTree = "<group>"; };
+		851EB55B204B901200556F51 /* TTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
+		851EB55C204B901200556F51 /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
+		E365651AC251634E073EC01F /* Pods-CheTuanS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheTuanS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheTuanS/Pods-CheTuanS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		851EB4FB2049496F00556F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851EB53E204949F300556F51 /* AipBase.framework in Frameworks */,
+				851EB53C204949DA00556F51 /* AipOcrSdk.framework in Frameworks */,
+				851EB537204949C300556F51 /* IdcardQuality.framework in Frameworks */,
+				59C4BBBB2A7CE0321EE4A823 /* libPods-CheTuanS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851EB5132049497000556F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851EB51E2049497000556F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41838F6C2C18955307FC2224 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E365651AC251634E073EC01F /* Pods-CheTuanS.debug.xcconfig */,
+				05B228F94E83FC5B63719D3F /* Pods-CheTuanS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		821F40F81A7F5EBBDD8D7B10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60617CEFF336EE3DE01E7488 /* libPods-CheTuanS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		851EB4F52049496F00556F51 = {
+			isa = PBXGroup;
+			children = (
+				851EB533204949C200556F51 /* AipBase.framework */,
+				851EB535204949C300556F51 /* AipOcrSdk.framework */,
+				851EB534204949C200556F51 /* IdcardQuality.framework */,
+				851EB540204B884700556F51 /* Tools */,
+				851EB5002049496F00556F51 /* CheTuanS */,
+				851EB5192049497000556F51 /* CheTuanSTests */,
+				851EB5242049497000556F51 /* CheTuanSUITests */,
+				851EB4FF2049496F00556F51 /* Products */,
+				41838F6C2C18955307FC2224 /* Pods */,
+				821F40F81A7F5EBBDD8D7B10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		851EB4FF2049496F00556F51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				851EB4FE2049496F00556F51 /* CheTuanS.app */,
+				851EB5162049497000556F51 /* CheTuanSTests.xctest */,
+				851EB5212049497000556F51 /* CheTuanSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		851EB5002049496F00556F51 /* CheTuanS */ = {
+			isa = PBXGroup;
+			children = (
+				851EB5012049496F00556F51 /* AppDelegate.h */,
+				851EB5022049496F00556F51 /* AppDelegate.m */,
+				851EB5072049496F00556F51 /* Main.storyboard */,
+				851EB50A2049496F00556F51 /* Assets.xcassets */,
+				851EB50C2049496F00556F51 /* LaunchScreen.storyboard */,
+				851EB50F2049496F00556F51 /* Info.plist */,
+				851EB5102049496F00556F51 /* main.m */,
+				851EB55B204B901200556F51 /* TTViewController.h */,
+				851EB55C204B901200556F51 /* TTViewController.m */,
+			);
+			path = CheTuanS;
+			sourceTree = "<group>";
+		};
+		851EB5192049497000556F51 /* CheTuanSTests */ = {
+			isa = PBXGroup;
+			children = (
+				851EB51A2049497000556F51 /* CheTuanSTests.m */,
+				851EB51C2049497000556F51 /* Info.plist */,
+			);
+			path = CheTuanSTests;
+			sourceTree = "<group>";
+		};
+		851EB5242049497000556F51 /* CheTuanSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				851EB5252049497000556F51 /* CheTuanSUITests.m */,
+				851EB5272049497000556F51 /* Info.plist */,
+			);
+			path = CheTuanSUITests;
+			sourceTree = "<group>";
+		};
+		851EB540204B884700556F51 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				851EB552204B8AEE00556F51 /* JTNetworkManager.h */,
+				851EB551204B8AEE00556F51 /* JTNetworkManager.m */,
+				851EB558204B8D8700556F51 /* AppMacros.h */,
+				851EB556204B8CB800556F51 /* JTBaseMethod.h */,
+				851EB555204B8CB800556F51 /* JTBaseMethod.m */,
+				851EB554204B8BBA00556F51 /* Header.h */,
+				851EB54C204B8A9200556F51 /* MBProgressHUD+JT.h */,
+				851EB54D204B8A9200556F51 /* MBProgressHUD+JT.m */,
+				851EB54E204B8A9200556F51 /* NSString+MD5.h */,
+				851EB54B204B8A9200556F51 /* NSString+MD5.m */,
+				851EB544204B88E800556F51 /* NSData+Encryption.h */,
+				851EB545204B88E800556F51 /* NSData+Encryption.m */,
+				851EB547204B891100556F51 /* CTPCacheFileManager.h */,
+				851EB548204B891100556F51 /* CTPCacheFileManager.m */,
+				851EB54A204B89BE00556F51 /* PrefixHeader.pch */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		851EB4FD2049496F00556F51 /* CheTuanS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851EB52A2049497000556F51 /* Build configuration list for PBXNativeTarget "CheTuanS" */;
+			buildPhases = (
+				3242D33FAEBCD476541EFFAB /* [CP] Check Pods Manifest.lock */,
+				851EB4FA2049496F00556F51 /* Sources */,
+				851EB4FB2049496F00556F51 /* Frameworks */,
+				851EB4FC2049496F00556F51 /* Resources */,
+				851EB53B204949D800556F51 /* Embed Frameworks */,
+				245D7124C3F5ABA6B5165128 /* [CP] Embed Pods Frameworks */,
+				587CCEF26E06FC58D9874B6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheTuanS;
+			productName = CheTuanS;
+			productReference = 851EB4FE2049496F00556F51 /* CheTuanS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		851EB5152049497000556F51 /* CheTuanSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851EB52D2049497000556F51 /* Build configuration list for PBXNativeTarget "CheTuanSTests" */;
+			buildPhases = (
+				851EB5122049497000556F51 /* Sources */,
+				851EB5132049497000556F51 /* Frameworks */,
+				851EB5142049497000556F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851EB5182049497000556F51 /* PBXTargetDependency */,
+			);
+			name = CheTuanSTests;
+			productName = CheTuanSTests;
+			productReference = 851EB5162049497000556F51 /* CheTuanSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		851EB5202049497000556F51 /* CheTuanSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851EB5302049497000556F51 /* Build configuration list for PBXNativeTarget "CheTuanSUITests" */;
+			buildPhases = (
+				851EB51D2049497000556F51 /* Sources */,
+				851EB51E2049497000556F51 /* Frameworks */,
+				851EB51F2049497000556F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851EB5232049497000556F51 /* PBXTargetDependency */,
+			);
+			name = CheTuanSUITests;
+			productName = CheTuanSUITests;
+			productReference = 851EB5212049497000556F51 /* CheTuanSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		851EB4F62049496F00556F51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = goodDay;
+				TargetAttributes = {
+					851EB4FD2049496F00556F51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					851EB5152049497000556F51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 851EB4FD2049496F00556F51;
+					};
+					851EB5202049497000556F51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 851EB4FD2049496F00556F51;
+					};
+				};
+			};
+			buildConfigurationList = 851EB4F92049496F00556F51 /* Build configuration list for PBXProject "CheTuanS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 851EB4F52049496F00556F51;
+			productRefGroup = 851EB4FF2049496F00556F51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				851EB4FD2049496F00556F51 /* CheTuanS */,
+				851EB5152049497000556F51 /* CheTuanSTests */,
+				851EB5202049497000556F51 /* CheTuanSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		851EB4FC2049496F00556F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851EB50E2049496F00556F51 /* LaunchScreen.storyboard in Resources */,
+				851EB50B2049496F00556F51 /* Assets.xcassets in Resources */,
+				851EB5092049496F00556F51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851EB5142049497000556F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851EB51F2049497000556F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245D7124C3F5ABA6B5165128 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheTuanS/Pods-CheTuanS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3242D33FAEBCD476541EFFAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheTuanS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		587CCEF26E06FC58D9874B6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheTuanS/Pods-CheTuanS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		851EB4FA2049496F00556F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851EB55D204B901200556F51 /* TTViewController.m in Sources */,
+				851EB549204B891100556F51 /* CTPCacheFileManager.m in Sources */,
+				851EB5112049496F00556F51 /* main.m in Sources */,
+				851EB557204B8CB800556F51 /* JTBaseMethod.m in Sources */,
+				851EB550204B8A9200556F51 /* MBProgressHUD+JT.m in Sources */,
+				851EB553204B8AEF00556F51 /* JTNetworkManager.m in Sources */,
+				851EB546204B88E800556F51 /* NSData+Encryption.m in Sources */,
+				851EB5032049496F00556F51 /* AppDelegate.m in Sources */,
+				851EB54F204B8A9200556F51 /* NSString+MD5.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851EB5122049497000556F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851EB51B2049497000556F51 /* CheTuanSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851EB51D2049497000556F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851EB5262049497000556F51 /* CheTuanSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		851EB5182049497000556F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851EB4FD2049496F00556F51 /* CheTuanS */;
+			targetProxy = 851EB5172049497000556F51 /* PBXContainerItemProxy */;
+		};
+		851EB5232049497000556F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851EB4FD2049496F00556F51 /* CheTuanS */;
+			targetProxy = 851EB5222049497000556F51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		851EB5072049496F00556F51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				851EB5082049496F00556F51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		851EB50C2049496F00556F51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				851EB50D2049496F00556F51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		851EB5282049497000556F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		851EB5292049497000556F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		851EB52B2049497000556F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E365651AC251634E073EC01F /* Pods-CheTuanS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ZL4K5SEZ;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/PrefixHeader.pch;
+				INFOPLIST_FILE = CheTuanS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		851EB52C2049497000556F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05B228F94E83FC5B63719D3F /* Pods-CheTuanS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ZL4K5SEZ;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/PrefixHeader.pch;
+				INFOPLIST_FILE = CheTuanS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		851EB52E2049497000556F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7ZJK47UKH;
+				INFOPLIST_FILE = CheTuanSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheTuanS.app/CheTuanS";
+			};
+			name = Debug;
+		};
+		851EB52F2049497000556F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7ZJK47UKH;
+				INFOPLIST_FILE = CheTuanSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheTuanS.app/CheTuanS";
+			};
+			name = Release;
+		};
+		851EB5312049497000556F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7ZJK47UKH;
+				INFOPLIST_FILE = CheTuanSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CheTuanS;
+			};
+			name = Debug;
+		};
+		851EB5322049497000556F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7ZJK47UKH;
+				INFOPLIST_FILE = CheTuanSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CheTuanS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		851EB4F92049496F00556F51 /* Build configuration list for PBXProject "CheTuanS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851EB5282049497000556F51 /* Debug */,
+				851EB5292049497000556F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851EB52A2049497000556F51 /* Build configuration list for PBXNativeTarget "CheTuanS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851EB52B2049497000556F51 /* Debug */,
+				851EB52C2049497000556F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851EB52D2049497000556F51 /* Build configuration list for PBXNativeTarget "CheTuanSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851EB52E2049497000556F51 /* Debug */,
+				851EB52F2049497000556F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851EB5302049497000556F51 /* Build configuration list for PBXNativeTarget "CheTuanSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851EB5312049497000556F51 /* Debug */,
+				851EB5322049497000556F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 851EB4F62049496F00556F51 /* Project object */;
+}
