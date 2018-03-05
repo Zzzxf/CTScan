@@ -63,7 +63,7 @@
 
 -(void)testDemo{
 
-    [self pushInfoWithVin:@"LSVGP4557E2028098"];
+    [self pushInfoWithVin:@"LSvgP4557E2028098"];
     return;
     //UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"识别Vin错误" message:@"不是有效的Vin号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
     //[alertView show];
@@ -118,8 +118,8 @@
 }
 
 -(void)pushInfoWithVin:(NSString *)vinString{
-
-    NSInteger vinLength = vinString.length;
+    NSString *vin = [vinString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSInteger vinLength = vin.length;
     if (vinLength == 17) {
         //很可能是正确的vin号码
     }else{
@@ -133,12 +133,12 @@
         _uploadConfirmView.frame = CGRectMake(20, 20, SCREEN_WIDTH-40, 200);
         //_uploadConfirmView = [[UploadConfirmView alloc]initWithFrame:CGRectMake(20, 20, SCREEN_WIDTH-40, 200)];
         [self.view addSubview:_uploadConfirmView];
-        _uploadConfirmView.confirmTextField.text = vinString;
+        _uploadConfirmView.confirmTextField.text = vin;
         _uploadConfirmView.cvDelegate = self;
         return;
     }
 
-    NSDictionary *dict = [NSDictionary dictionaryWithObject:vinString forKey:@"vin"];
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:vin forKey:@"vin"];
 
     [[JTNetworkManager sharedManager]requestServerAPI:@"ajax/panku" params:dict showHud:NO completionHandler:^(id task, id responseObject, NSError *error) {
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
