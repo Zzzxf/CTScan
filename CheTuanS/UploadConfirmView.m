@@ -25,6 +25,7 @@
     NSLog(@"UploadConfirmView...%s",__FUNCTION__);
     self.backgroundColor = [UIColor redColor];
     [_confirmTextField becomeFirstResponder];
+    self.layer.cornerRadius = 12;
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{

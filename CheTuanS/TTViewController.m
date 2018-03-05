@@ -119,7 +119,10 @@
 
 -(void)pushInfoWithVin:(NSString *)vinString{
     NSString *vin = [vinString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    vin = [vin stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    vin = [vin stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     NSInteger vinLength = vin.length;
+
     if (vinLength == 17) {
         //很可能是正确的vin号码
     }else{
