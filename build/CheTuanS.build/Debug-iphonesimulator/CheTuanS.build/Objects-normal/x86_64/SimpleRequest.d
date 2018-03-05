@@ -1,9 +1,9 @@
 dependencies: \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/SimpleRequest.m \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/PrefixHeader.pch \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/MBProgressHUD+JT.h \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/Header.h \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/JTBaseMethod.h \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/AppMacros.h \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/JTNetworkManager.h \
-  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/SimpleRequest.h
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/SimpleRequest.m \
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/PrefixHeader.pch \
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/MBProgressHUD+JT.h \
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/Header.h \
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/JTBaseMethod.h \
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/AppMacros.h \
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/JTNetworkManager.h \
+  /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/SimpleRequest.h

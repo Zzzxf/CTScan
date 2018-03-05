@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		74TUgGVmS8Kd6MTGXc1zHO3p664=
+		ZG8pWCBcZRUpVwXQG1FmM9ueuRs=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		4w2VvewaqPBNK2UZMOURqhugFps=
+		9CvR4+oaCQeQYEpXH3ScfR0GPh8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-TfL-s5-uKi.nib</key>
 		<data>
-		X8Ai1SNYMgM9XQ/4tCVD4LM+vfo=
+		JNr3V3sxi16Bdfkzf32LGaSXaKU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Ufs-iK-5Yv-view-GzA-w8-wZr.nib</key>
 		<data>
-		c6Oqt797TyZwYZw40ZZoCY3t5IQ=
+		n/O8wfwLQ9IvxyL7bAhBCMZ1Hkc=
 		</data>
 		<key>Frameworks/AipBase.framework/AipBase</key>
 		<data>
@@ -188,6 +188,10 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>UploadConfirmView.nib</key>
+		<data>
+		MkkodV1jZlODYlBa5T9Tg9Z+nxQ=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -195,11 +199,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			74TUgGVmS8Kd6MTGXc1zHO3p664=
+			ZG8pWCBcZRUpVwXQG1FmM9ueuRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			BPJi7hxqjV7IdLBKIEJ9Kbd+Gk8CKLBk1scv57APj08=
+			i5Vgbj4EtI0fcB+NKirefTGKvbC+hc6fTgBoXNazy4I=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -217,11 +221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4w2VvewaqPBNK2UZMOURqhugFps=
+			9CvR4+oaCQeQYEpXH3ScfR0GPh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			C0f5jPgJjCrNiXZ/uO6PGQvZ8iJIArf27Iuk/AYeBCo=
+			J989LtVQvsPLQLuVjzf2ZFCHIna5CToGP0cv/WuPHp0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -239,22 +243,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X8Ai1SNYMgM9XQ/4tCVD4LM+vfo=
+			JNr3V3sxi16Bdfkzf32LGaSXaKU=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Q0W+Q+9Azbzou/P3ZEI8o93WvFXy9wIxJw9IZSqv7s=
+			8Iww/rJNWmJE36Prf2XwlNI91gQsXVCP20JxVpqroWA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Ufs-iK-5Yv-view-GzA-w8-wZr.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c6Oqt797TyZwYZw40ZZoCY3t5IQ=
+			n/O8wfwLQ9IvxyL7bAhBCMZ1Hkc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nq04YD29LZ7cI8IWv+MrQEFq6QRr/0CNiCXeLdmqF4E=
+			o3t5Pt3qpJVAh57x07ytW/YQxgkFciHdW6mzDiPWqdQ=
 			</data>
 		</dict>
 		<key>Frameworks/AipBase.framework/AipBase</key>
@@ -673,6 +677,17 @@
 			<key>hash2</key>
 			<data>
 			2I4290SlPdKX64XNhA7K571MpzWdOgTwPqjZLystb+Q=
+			</data>
+		</dict>
+		<key>UploadConfirmView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MkkodV1jZlODYlBa5T9Tg9Z+nxQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			SLvyLK+4erzVcGPIagiR+PU3bK6GO/gAzFu1rEmGKkk=
 			</data>
 		</dict>
 	</dict>

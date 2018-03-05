@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UploadConfirmView">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="308"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1a7-Rd-mJO">
+                    <rect key="frame" x="20" y="20" width="375" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ki7-4d-xPT"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06H-LU-xOS">
+                    <rect key="frame" x="315" y="258" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="F5x-PO-phA"/>
+                        <constraint firstAttribute="height" constant="30" id="ykL-zi-ZAD"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancelBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bCz-in-Wpb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpo-U3-i1p">
+                    <rect key="frame" x="20" y="258" width="85" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Q8b-ce-HPA"/>
+                        <constraint firstAttribute="width" constant="85" id="SkW-h4-6WN"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="confirmBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="EQO-yj-VjL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lpo-U3-i1p" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="3TE-WO-StK"/>
+                <constraint firstItem="1a7-Rd-mJO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="4uf-e8-XVs"/>
+                <constraint firstItem="1a7-Rd-mJO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="CPO-QK-ODd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="06H-LU-xOS" secondAttribute="bottom" constant="20" id="Er0-9p-gcS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1a7-Rd-mJO" secondAttribute="trailing" constant="20" id="NGb-B3-x5g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="06H-LU-xOS" secondAttribute="trailing" constant="20" id="c9B-BD-BwV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Lpo-U3-i1p" secondAttribute="bottom" constant="20" id="cI7-bd-OIv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="confirmTextField" destination="1a7-Rd-mJO" id="Uef-Te-vnH"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="60"/>
+        </view>
+    </objects>
+</document>

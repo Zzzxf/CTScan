@@ -29,6 +29,8 @@
 		851EB557204B8CB800556F51 /* JTBaseMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB555204B8CB800556F51 /* JTBaseMethod.m */; };
 		851EB55D204B901200556F51 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB55C204B901200556F51 /* TTViewController.m */; };
 		851EB560204CDDA000556F51 /* SimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EB55F204CDDA000556F51 /* SimpleRequest.m */; };
+		85E91349204D1ADF00409C09 /* UploadConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E91348204D1ADF00409C09 /* UploadConfirmView.m */; };
+		85E9134B204D1AF600409C09 /* UploadConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E9134A204D1AF600409C09 /* UploadConfirmView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,9 @@
 		851EB55C204B901200556F51 /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
 		851EB55E204CDDA000556F51 /* SimpleRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleRequest.h; sourceTree = "<group>"; };
 		851EB55F204CDDA000556F51 /* SimpleRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleRequest.m; sourceTree = "<group>"; };
+		85E91347204D1ADF00409C09 /* UploadConfirmView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadConfirmView.h; sourceTree = "<group>"; };
+		85E91348204D1ADF00409C09 /* UploadConfirmView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadConfirmView.m; sourceTree = "<group>"; };
+		85E9134A204D1AF600409C09 /* UploadConfirmView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadConfirmView.xib; sourceTree = "<group>"; };
 		E365651AC251634E073EC01F /* Pods-CheTuanS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheTuanS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheTuanS/Pods-CheTuanS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,13 +188,16 @@
 			children = (
 				851EB5012049496F00556F51 /* AppDelegate.h */,
 				851EB5022049496F00556F51 /* AppDelegate.m */,
+				851EB55B204B901200556F51 /* TTViewController.h */,
+				851EB55C204B901200556F51 /* TTViewController.m */,
 				851EB5072049496F00556F51 /* Main.storyboard */,
 				851EB50A2049496F00556F51 /* Assets.xcassets */,
 				851EB50C2049496F00556F51 /* LaunchScreen.storyboard */,
 				851EB50F2049496F00556F51 /* Info.plist */,
 				851EB5102049496F00556F51 /* main.m */,
-				851EB55B204B901200556F51 /* TTViewController.h */,
-				851EB55C204B901200556F51 /* TTViewController.m */,
+				85E91347204D1ADF00409C09 /* UploadConfirmView.h */,
+				85E91348204D1ADF00409C09 /* UploadConfirmView.m */,
+				85E9134A204D1AF600409C09 /* UploadConfirmView.xib */,
 			);
 			path = CheTuanS;
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E9134B204D1AF600409C09 /* UploadConfirmView.xib in Resources */,
 				851EB50E2049496F00556F51 /* LaunchScreen.storyboard in Resources */,
 				851EB50B2049496F00556F51 /* Assets.xcassets in Resources */,
 				851EB5092049496F00556F51 /* Main.storyboard in Resources */,
@@ -424,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E91349204D1ADF00409C09 /* UploadConfirmView.m in Sources */,
 				851EB55D204B901200556F51 /* TTViewController.m in Sources */,
 				851EB549204B891100556F51 /* CTPCacheFileManager.m in Sources */,
 				851EB5112049496F00556F51 /* main.m in Sources */,
@@ -605,7 +615,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/PrefixHeader.pch;
 				INFOPLIST_FILE = CheTuanS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSS;
@@ -629,7 +639,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/Tools/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/Zzzxf/Desktop/AllDesk/GameFile/CheTuanS/CTScan/Tools/PrefixHeader.pch;
 				INFOPLIST_FILE = CheTuanS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chetuan.CheTuanSS;

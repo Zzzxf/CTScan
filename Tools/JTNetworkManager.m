@@ -114,7 +114,7 @@ NSString * const kBaseURL = @"https://www.suncars.com.cn/suncars/app/";
         // 获取头部信息
         requestHeaders = [self getRequestHeaders];
         [self requestServerAPI:apiStr
-                 encodedParams:encodedParams
+                 encodedParams:params
                        headers:requestHeaders
                        showHud:showHud
                        timeout:10
@@ -136,7 +136,7 @@ NSString * const kBaseURL = @"https://www.suncars.com.cn/suncars/app/";
                 filePath:(NSString *)filePath
        completionHandler:(void(^)(NSURLSessionTask *task, id responseObject, NSError *error))completionHandler {
     NSLog(@"%s\n>>>请求的API地址:%@", __FUNCTION__, api);
-    NSLog(@"%s\n>>>请求头部信息:%@", __FUNCTION__, headers);
+    //NSLog(@"%s\n>>>请求头部信息:%@", __FUNCTION__, headers);
     if (encodedParams) {
         NSLog(@"%s\n>>>编码后的参数:%@", __FUNCTION__, encodedParams);
     } else {

@@ -9,9 +9,11 @@
 #import "TTViewController.h"
 #import <objc/runtime.h>
 #import <AipOcrSdk/AipOcrSdk.h>
-
-@interface TTViewController ()<UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
-
+#import "UploadConfirmView.h"
+@interface TTViewController ()<UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate,ConfirmViewDelegate>
+{
+    UploadConfirmView *_uploadConfirmView;
+}
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSMutableArray<NSArray<NSString *> *> *actionList;
@@ -41,8 +43,10 @@
     UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc]initWithCustomView:pushBtn];
     self.navigationItem.rightBarButtonItem = rightBarItem;
 
-
-
+    UIButton *testDemoBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 30, 30, 30)];
+    [testDemoBtn addTarget:self action:@selector(testDemo) forControlEvents:UIControlEventTouchUpInside];
+    [testDemoBtn setTitle:@"demoTest" forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:testDemoBtn];
 
     // 授权方法2（更安全）： 下载授权文件，添加至资源
     //    NSString *licenseFile = [[NSBundle mainBundle] pathForResource:@"aip" ofType:@"license"];
@@ -52,10 +56,25 @@
     //    }
     //    [[AipOcrService shardService] authWithLicenseFileData:licenseFileData];
 
-
     [self configureView];
     [self configureData];
     [self configCallback];
+}
+
+-(void)testDemo{
+
+    [self pushInfoWithVin:@"LSVGP4557E2028098"];
+    return;
+    //UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"识别Vin错误" message:@"不是有效的Vin号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    //[alertView show];
+    _uploadConfirmView = [UploadConfirmView getUploadCView];
+    _uploadConfirmView.frame = CGRectMake(20, 20, SCREEN_WIDTH-40, 200);
+    [self.view addSubview:_uploadConfirmView];
+    _uploadConfirmView.confirmTextField.text = @"ASDFET89798700000";
+    _uploadConfirmView.cvDelegate = self;
+    //_uploadConfirmView.backgroundColor = [UIColor redColor];
+    
+    return;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -64,16 +83,17 @@
 }
 
 -(void)pushInfo{
-    NSLog(@"pushInfo");
+//    NSLog(@"pushInfo");
     NSDictionary *dict = [NSDictionary dictionaryWithObject:@"LSVGP4556D2045473" forKey:@"vin"];
-
-    [[JTNetworkManager sharedManager]requestServerAPI:@"ajax/panku" params:dict showHud:NO completionHandler:^(id task, id responseObject, NSError *error) {
-
-    }];
-
-    return;
+//
+//    [[JTNetworkManager sharedManager]requestServerAPI:@"ajax/panku" params:dict showHud:NO completionHandler:^(id task, id responseObject, NSError *error) {
+//
+//    }];
+////
+//    return;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
 
     //NSDictionary *dict = [NSDictionary dictionaryWithObject:@"LSVGP4556D2045473" forKey:@"vin"];
     [manager GET:@"http://data.chetuan.com.cn/direct_sale/app_huangniu/ajax/panku" parameters:dict progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -81,7 +101,7 @@
     }
          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 
-             NSLog(@"这里打印请求成功要做的事");
+             //NSLog(@"这里打印请求成功要做的事");
              NSLog(@"%@",responseObject);
          }
 
@@ -97,9 +117,53 @@
 //    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 }
 
+-(void)pushInfoWithVin:(NSString *)vinString{
+
+    NSInteger vinLength = vinString.length;
+    if (vinLength == 17) {
+        //很可能是正确的vin号码
+    }else{
+        //不正确的vin号码
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"识别Vin错误" message:@"不是有效的Vin号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        //[self pushInfoWithVin:message];
+
+        [alertView show];
+
+        _uploadConfirmView = [UploadConfirmView getUploadCView];
+        _uploadConfirmView.frame = CGRectMake(20, 20, SCREEN_WIDTH-40, 200);
+        //_uploadConfirmView = [[UploadConfirmView alloc]initWithFrame:CGRectMake(20, 20, SCREEN_WIDTH-40, 200)];
+        [self.view addSubview:_uploadConfirmView];
+        _uploadConfirmView.confirmTextField.text = vinString;
+        _uploadConfirmView.cvDelegate = self;
+        return;
+    }
+
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:vinString forKey:@"vin"];
+
+    [[JTNetworkManager sharedManager]requestServerAPI:@"ajax/panku" params:dict showHud:NO completionHandler:^(id task, id responseObject, NSError *error) {
+        if ([responseObject isKindOfClass:[NSDictionary class]]) {
+
+            NSNumber* statusNum = responseObject[@"status"];
+
+            if (statusNum.integerValue == 1) {
+                //成功！
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"vin码已成功入库" message:@"成功写入" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alertView show];
+                [self removeSelf];
+
+            }
+            else{
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"vin码写入失败" message:@"请填写正确的vin码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alertView show];
+            }
+        }
+
+    }];
+}
+
 - (void)configureView {
 
-    self.title = @"百度OCR";
+    self.title = @"OCR识别&查询";
 }
 
 - (void)configureData {
@@ -160,6 +224,7 @@
 
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:weakSelf cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [weakSelf pushInfoWithVin:message];
             [alertView show];
         }];
     };
@@ -492,6 +557,24 @@
 #pragma mark UIAlertViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma cvDelegate
+-(void)removeSelf{
+    for (UploadConfirmView *uView  in self.view.subviews) {
+        if ([uView isKindOfClass:[UploadConfirmView class]]) {
+            [uView removeFromSuperview];
+                uView.cvDelegate = nil;
+        }
+    }
+
+   // [_uploadConfirmView removeFromSuperview];
+//    _uploadConfirmView.cvDelegate = nil;
+//    _uploadConfirmView = nil;
+}
+
+-(void)pushInfoWithConfirmedStr:(NSString *)confirmedVin{
+    [self pushInfoWithVin:confirmedVin];
 }
 
 @end
