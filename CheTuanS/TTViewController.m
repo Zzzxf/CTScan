@@ -37,16 +37,19 @@
     //     授权方法1：在此处填写App的Api Key/Secret Key
     [[AipOcrService shardService] authWithAK:@"YnGoBXWPQwoFzfHpBDGi24ad" andSK:@"eWKazwAlv6FMG4Avbxp6Uoy9LIyrAcvr"];
 
-    UIButton *pushBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
-    [pushBtn addTarget:self action:@selector(pushInfo) forControlEvents:UIControlEventTouchUpInside];
-    [pushBtn setTitle:@"Push" forState:UIControlStateNormal];
-    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc]initWithCustomView:pushBtn];
-    self.navigationItem.rightBarButtonItem = rightBarItem;
+    if (!IS_TEST) {
+        UIButton *pushBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+        [pushBtn addTarget:self action:@selector(pushInfo) forControlEvents:UIControlEventTouchUpInside];
+        [pushBtn setTitle:@"Push" forState:UIControlStateNormal];
+        UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc]initWithCustomView:pushBtn];
+        self.navigationItem.rightBarButtonItem = rightBarItem;
 
-    UIButton *testDemoBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 30, 30, 30)];
-    [testDemoBtn addTarget:self action:@selector(testDemo) forControlEvents:UIControlEventTouchUpInside];
-    [testDemoBtn setTitle:@"demoTest" forState:UIControlStateNormal];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:testDemoBtn];
+        UIButton *testDemoBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 30, 30, 30)];
+        [testDemoBtn addTarget:self action:@selector(testDemo) forControlEvents:UIControlEventTouchUpInside];
+        [testDemoBtn setTitle:@"demoTest" forState:UIControlStateNormal];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:testDemoBtn];
+    }
+
 
     // 授权方法2（更安全）： 下载授权文件，添加至资源
     //    NSString *licenseFile = [[NSBundle mainBundle] pathForResource:@"aip" ofType:@"license"];
@@ -63,12 +66,12 @@
 
 -(void)testDemo{
 
-    [self pushInfoWithVin:@"LSvgP4557E2028098"];
+    [self pushInfoWithVin:@"LSvgP4557E20280938"];
     return;
     //UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"识别Vin错误" message:@"不是有效的Vin号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
     //[alertView show];
     _uploadConfirmView = [UploadConfirmView getUploadCView];
-    _uploadConfirmView.frame = CGRectMake(20, 20, SCREEN_WIDTH-40, 200);
+    _uploadConfirmView.frame = CGRectMake(20, 180, SCREEN_WIDTH-40, 200);
     [self.view addSubview:_uploadConfirmView];
     _uploadConfirmView.confirmTextField.text = @"ASDFET89798700000";
     _uploadConfirmView.cvDelegate = self;
@@ -133,7 +136,7 @@
         [alertView show];
 
         _uploadConfirmView = [UploadConfirmView getUploadCView];
-        _uploadConfirmView.frame = CGRectMake(20, 20, SCREEN_WIDTH-40, 200);
+        _uploadConfirmView.frame = CGRectMake(20, 120, SCREEN_WIDTH-40, 200);
         //_uploadConfirmView = [[UploadConfirmView alloc]initWithFrame:CGRectMake(20, 20, SCREEN_WIDTH-40, 200)];
         [self.view addSubview:_uploadConfirmView];
         _uploadConfirmView.confirmTextField.text = vin;
@@ -166,19 +169,19 @@
 
 - (void)configureView {
 
-    self.title = @"OCR识别&查询";
+    self.title = @"VIN识别&查询";
 }
 
 - (void)configureData {
 
     self.actionList = [NSMutableArray array];
 
-    [self.actionList addObject:@[@"通用文字识别", @"generalBasicOCR"]];
-    [self.actionList addObject:@[@"通用文字识别(高精度版)", @"generalAccurateBasicOCR"]];
-    [self.actionList addObject:@[@"通用文字识别(含位置信息版)", @"generalOCR"]];
-    [self.actionList addObject:@[@"通用文字识别(高精度含位置版)", @"generalAccurateOCR"]];
-    [self.actionList addObject:@[@"通用文字识别(含生僻字版)", @"generalEnchancedOCR"]];
-    [self.actionList addObject:@[@"网络图片文字识别", @"webImageOCR"]];
+    //[self.actionList addObject:@[@"通用文字识别", @"generalBasicOCR"]];
+    [self.actionList addObject:@[@"点击进入VIN识别", @"generalAccurateBasicOCR"]];
+    //[self.actionList addObject:@[@"通用文字识别(含位置信息版)", @"generalOCR"]];
+    //[self.actionList addObject:@[@"通用文字识别(高精度含位置版)", @"generalAccurateOCR"]];
+    //[self.actionList addObject:@[@"通用文字识别(含生僻字版)", @"generalEnchancedOCR"]];
+    //[self.actionList addObject:@[@"网络图片文字识别", @"webImageOCR"]];
 //    [self.actionList addObject:@[@"身份证正面拍照识别", @"idcardOCROnlineFront"]];
 //    [self.actionList addObject:@[@"身份证反面拍照识别", @"idcardOCROnlineBack"]];
 //    [self.actionList addObject:@[@"身份证正面(嵌入式质量控制+云端识别)", @"localIdcardOCROnlineFront"]];

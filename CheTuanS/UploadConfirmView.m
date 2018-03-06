@@ -23,7 +23,7 @@
     [super awakeFromNib];
     _confirmTextField.delegate = self;
     NSLog(@"UploadConfirmView...%s",__FUNCTION__);
-    self.backgroundColor = [UIColor redColor];
+    //self.backgroundColor = [UIColor redColor];
     [_confirmTextField becomeFirstResponder];
     self.layer.cornerRadius = 12;
 }

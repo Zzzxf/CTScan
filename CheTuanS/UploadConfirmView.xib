@@ -31,6 +31,7 @@
                         <constraint firstAttribute="width" constant="80" id="F5x-PO-phA"/>
                         <constraint firstAttribute="height" constant="30" id="ykL-zi-ZAD"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="取消"/>
                     <connections>
                         <action selector="cancelBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bCz-in-Wpb"/>
@@ -42,13 +43,14 @@
                         <constraint firstAttribute="height" constant="30" id="Q8b-ce-HPA"/>
                         <constraint firstAttribute="width" constant="85" id="SkW-h4-6WN"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="确定"/>
                     <connections>
                         <action selector="confirmBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="EQO-yj-VjL"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.81983751946089645" green="0.89418745656236376" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Lpo-U3-i1p" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="3TE-WO-StK"/>
                 <constraint firstItem="1a7-Rd-mJO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="4uf-e8-XVs"/>
