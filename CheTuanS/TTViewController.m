@@ -130,7 +130,7 @@
         //很可能是正确的vin号码
     }else{
         //不正确的vin号码
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"识别Vin错误" message:@"不是有效的Vin号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"不是有效的Vin号码" message:@"请使用更清晰的图片或手动输入VIN号" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
         //[self pushInfoWithVin:message];
 
         [alertView show];
